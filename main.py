@@ -29,8 +29,8 @@ def main():
     env.read_env()
     excel_path = env.str('EXCEL_PATH', default='table_of_property_wine.xlsx')
 
-    parser = argparse.ArgumentParser(description='''Введите путь до файла, либо же название файла, 
-                                     если он уже находится в директории скрипта.''')
+    parser = argparse.ArgumentParser(description='''Скрипт предназначен для обработки файла данных. 
+        Он позволяет проанализировать или преобразовать информацию, находящуюся в файле, и выполнить заданные действия.''')
     parser.add_argument('--path', default=excel_path, help='Путь')
     args = parser.parse_args()
 
